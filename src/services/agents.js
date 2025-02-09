@@ -2,8 +2,9 @@ import axios from "axios";
 
 export async function Agent(message) {
   console.log(message);
+  const urlBack = import.meta.env.VITE_BACKEND_URL;
   try {
-    const response = await axios.post("http://127.0.0.1:8000/user", {
+    const response = await axios.post(urlBack, {
       query: message,
     });
 
