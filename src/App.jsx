@@ -4,7 +4,7 @@ import Dashboard from "./pages/dashboard";
 import WarehouseConfigForm from "./pages/dashboard";
 import WarehouseForm from "./pages/WarehouseForm";
 import FuturisticChatFullPage from "./pages/FuturisticChatFullPage";
-import { BrowserRouter, Routes, Route } from "react-router";
+import { HashRouter as Router, Routes, Route } from "react-router";
 import Login from "./pages/login";
 function App() {
   const [count, setCount] = useState(0);
