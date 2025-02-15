@@ -312,7 +312,7 @@ const FuturisticChatFullPage = () => {
         </main>
       </div>
 
-      <style jsx>{`
+      <style>{`
         @keyframes pulse {
           0%,
           100% {

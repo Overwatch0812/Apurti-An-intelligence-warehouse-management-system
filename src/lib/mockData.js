@@ -1,8 +1,9 @@
 export const mockStocks = [
-  { symbol: "AAPL", name: "Apple Inc." },
-  { symbol: "GOOGL", name: "Alphabet Inc." },
-  { symbol: "MSFT", name: "Microsoft Corporation" },
-  { symbol: "AMZN", name: "Amazon.com, Inc." },
+  { symbol: "PP", name: "Printer Paper" },
+  { symbol: "BP", name: "Ballpoint Pens" },
+  { symbol: "PC", name: "Paper Clips" },
+  { symbol: "SN", name: "Sticky Notes" },
+  { symbol: "HS", name: "Hand Sanitizer" },
 ];
 
 export const generateMockData = (symbol) => {

@@ -1,10 +1,10 @@
 import { useState } from "react";
-import reactLogo from "./assets/react.svg";
-import viteLogo from "/vite.svg";
 import "./App.css";
 import Dashboard from "./pages/dashboard";
+import WarehouseConfigForm from "./pages/dashboard";
 import WarehouseForm from "./pages/WarehouseForm";
 import FuturisticChatFullPage from "./pages/FuturisticChatFullPage";
+import { BrowserRouter, Routes, Route } from "react-router";
 
 function App() {
   const [count, setCount] = useState(0);
@@ -12,8 +12,13 @@ function App() {
   return (
     <>
       {/* <Dashboard /> */}
-      {/* <WarehouseForm /> */}
-      <FuturisticChatFullPage />
+
+      {/* <FuturisticChatFullPage /> */}
+      <Routes>
+        <Route path="/" element={<WarehouseForm />} />
+        <Route path="/chat" element={<FuturisticChatFullPage />} />
+        <Route path="/forecast" element={<Dashboard />} />
+      </Routes>
     </>
   );
 }
