@@ -5,7 +5,7 @@ import WarehouseConfigForm from "./pages/dashboard";
 import WarehouseForm from "./pages/WarehouseForm";
 import FuturisticChatFullPage from "./pages/FuturisticChatFullPage";
 import { BrowserRouter, Routes, Route } from "react-router";
-
+import Login from "./pages/login";
 function App() {
   const [count, setCount] = useState(0);
 
@@ -18,6 +18,7 @@ function App() {
         <Route path="/" element={<WarehouseForm />} />
         <Route path="/chat" element={<FuturisticChatFullPage />} />
         <Route path="/forecast" element={<Dashboard />} />
+        <Route path="/login" element={<Login />} />
       </Routes>
     </>
   );
